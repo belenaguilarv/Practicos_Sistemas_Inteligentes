@@ -57,3 +57,31 @@ else:
 
 # La pizzería Bella Napoli ofrece pizzas vegetarianas y no vegetarianas a sus clientes. Los ingredientes para cada tipo de pizza aparecen a continuación.
 # Ingredientes vegetarianos: Pimiento y tofu. Ingredientes no vegetarianos: Peperoni, Jamón y Salmón. Escribir un programa que pregunte al usuario si quiere una pizza vegetariana o no, y en función de su respuesta le muestre un menú con los ingredientes disponibles para que elija. Solo se puede eligir un ingrediente además de la mozzarella y el tomate que están en todas la pizzas. Al final se debe mostrar por pantalla si la pizza elegida es vegetariana o no y todos los ingredientes que lleva.
+
+print("Bienvenido a la pizzería Bella Napoli! ¿Qué tipo de pizza te gustaría ordenar?")
+print("1. Pizza vegetariana")
+print("2. Pizza no vegetariana")
+
+option = int(input("Ingrese el número correspondiente a su elección: "))
+
+if option == 1:
+    print("Genial!.Todas las pizzas ya vienen con mozzarella y tomate, puede agregar uno de los ingredientes extra a su pizza vegetariana: ")
+    print("1. Pimiento")
+    print("2. Tofu")
+    extra = int(input("Seleccione el número correspondiente al ingrediente que desea añadir a su pizza: "))
+    if extra == 1:
+        print("Excelente! Los ingredientes de su pizza vegetariana son: mozzarella, tomate y pimiento")
+    elif extra == 2:
+        print("Excelente! Los ingredientes de su pizza vegetariana son: mozzarella, tomate y tofu")
+elif option == 2:
+    print("Genial!.Todas las pizzas ya vienen con mozzarella y tomate, puede agregar uno de los ingredientes extra a su pizza no vegetariana: ")
+    print("1. Peperoni")
+    print("2. Jamón")
+    print("3. Salmón")
+    extra = int(input("Seleccione el número correspondiente al ingrediente que desea añadir a su pizza: "))
+    if extra == 1:
+        print("Excelente! Los ingredientes de su pizza no vegetariana son: mozzarella, tomate y peperoni")
+    elif extra == 2:
+        print("Excelente! Los ingredientes de su pizza no vegetariana son: mozzarella, tomate y jamón")
+    elif extra == 3:
+        print("Excelente! Los ingredientes de su pizza no vegetariana son: mozzarella, tomate y salmón")
